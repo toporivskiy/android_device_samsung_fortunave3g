@@ -11,6 +11,8 @@ public final class Constants {
 
     public static final String TS_PATH = "/sys/class/input/input3/enabled";
 
+    public static final String TK_PATH = "/sys/class/input/input1/enabled";
+
 	// Doze intent
 
 	public static final String ACTION_DOZE_PULSE_STARTING = "android.intent.action.DOZE_PULSE_STARTING";
