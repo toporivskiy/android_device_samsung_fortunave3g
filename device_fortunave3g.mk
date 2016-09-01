@@ -234,13 +234,6 @@ PRODUCT_PROPERTY_OVERRIDES += \
 # be reachable from resources or other mechanisms.
 PRODUCT_PROPERTY_OVERRIDES += \
 	cm.updater.uri=http://updates.cm-ota.pp.ua
-	
-# Art
-PRODUCT_PROPERTY_OVERRIDES += \
-    dalvik.vm.image-dex2oat-filter=everything \
-    dalvik.vm.dex2oat-filter=everything \
-    dalvik.vm.dex2oat-flags=--no-watch-dog \
-	ro.sys.fw.dex2oat_thread_count=4
 
 # Low-RAM optimizations
 ADDITIONAL_BUILD_PROPERTIES += \
