@@ -137,7 +137,13 @@ static char *camera_fixup_getparams(int id, const char *settings)
 
     if(!isVideo){
 		params.set("auto-exposure-values", "center");
-		params.set("preview-format-values", "yuv420p");
+		
+		// fix params here
+		int video_width, video_height;
+		params.getPreviewSize(&video_width, &video_height);
+		if(video_width*video_height <= 960*540){
+			params.set("preview-format-values", "yuv420p");
+		}
 	}
 	
     android::String8 strParams = params.flatten();
