@@ -98,7 +98,7 @@ PROTOBUF_SUPPORTED                  := true
 EXTENDED_FONT_FOOTPRINT             := true
 
 # malloc implementation
-MALLOC_IMPL                         := dlmalloc
+MALLOC_IMPL                         := jemalloc
 
 # Vendor Init
 TARGET_UNIFIED_DEVICE               := true
@@ -145,10 +145,10 @@ TARGET_ENABLE_QC_AV_ENHANCEMENTS    := true
 
 # Display
 TARGET_CONTINUOUS_SPLASH_ENABLED      := true
-TARGET_USES_OVERLAY 		        := true
-TARGET_HARDWARE_3D		            := false
-TARGET_HAVE_HDMI_OUT 		        := false
-USE_OPENGL_RENDERER                 := true
+TARGET_USES_OVERLAY 		          := true
+TARGET_HARDWARE_3D		              := false
+TARGET_HAVE_HDMI_OUT 		          := false
+USE_OPENGL_RENDERER                   := true
 NUM_FRAMEBUFFER_SURFACE_BUFFERS       := 3
 MAX_EGL_CACHE_KEY_SIZE                := 12*1024
 MAX_EGL_CACHE_SIZE                    := 2048*1024
@@ -174,10 +174,10 @@ BOARD_USES_MMCUTILS 				:= true
 TARGET_USES_LOGD                    := false
 	
 # Misc.
-TARGET_SYSTEM_PROP                              := $(LOCAL_PATH)/system.prop
+TARGET_SYSTEM_PROP                  := $(LOCAL_PATH)/system.prop
 
 # Releasetools
-TARGET_RELEASETOOLS_EXTENSIONS                  := $(LOCAL_PATH)
+TARGET_RELEASETOOLS_EXTENSIONS      := $(LOCAL_PATH)
 
 # SELinux
 include device/qcom/sepolicy/sepolicy.mk
